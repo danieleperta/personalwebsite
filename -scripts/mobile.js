@@ -70,10 +70,12 @@
         if ($('.skills-section').hasClass('visibile')) {
 
             $('#skills').addClass('vis');
+            $('.color-first').addClass('load-skill-cont');
 
         } else {
 
             $('#skills').removeClass('vis');
+            $('.color-first').removeClass('load-skill-cont');
         }
     }
 
@@ -111,10 +113,11 @@
                     i++;
                     loop();
                 }
-            }, 90);
+            }, 120);
         }
         if ($('.skills-section').hasClass('visibile')) {
-            loop();
+            setTimeout(function() { loop(); }, 300);
+
         }
     }
 
