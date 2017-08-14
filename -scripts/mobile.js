@@ -101,7 +101,6 @@
 
 
     function checkSkill(element, value) {
-        console.log('checking');
         var $element = element,
             $value = value;
 
