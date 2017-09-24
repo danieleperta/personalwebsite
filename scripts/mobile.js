@@ -40,7 +40,7 @@
         setTimeout(function() {
             $loader.addClass('goOut');
             $bodi.removeClass('okay');
-        }, 1000);
+        }, 1300);
 
 
         $menu.on('click', clickMenu);
