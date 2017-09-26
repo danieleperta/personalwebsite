@@ -15,8 +15,7 @@
     <script src="scripts/tm.js"></script>
 </head>
 
-<body class="okay">
-
+<body class="okay" onselectstart="return false" ondragstart="return false">
     <div class="leftbar">
         <a href="index.html" class="logo_a "></a>
 
@@ -27,7 +26,7 @@
                 <a href="https://www.facebook.com/danieleperta/" target="_blank" class="a-social"><img src="SOCIAL-img/facebook.svg" alt="" class="img-social"></a>
                 <a href="https://medium.com/@prta.daniele" target="_blank" class="a-social"><img src="SOCIAL-img/medium.svg" alt="" class="img-social"></a>
                 <a href="https://www.linkedin.com/in/daniele-perta-268aaa139/" target="_blank" class="a-social"><img src="SOCIAL-img/linkedin.svg" alt="" class="img-social"></a>
-                <a href="https://www.instagram.com/perta.codingdesign/" target="_blank" class="a-social"><img src="../SOCIAL-img/instagram.svg" alt="" class="img-social"></a>
+                <a href="https://www.instagram.com/perta.codingdesign/" target="_blank" class="a-social"><img src="SOCIAL-img/instagram.svg" alt="" class="img-social"></a>
 
             </div>
         </div>
@@ -38,13 +37,15 @@
     <div class="menucont">
         <div class="menu_text">
 
-            <span class="menu_sing" style="text-decoration:underline;">Home</span>
-            <span class="menu_sing">About</span>
-            <span class="menu_sing">Contact</span>
-            <span class="menu_sing" style="text-decoration: line-through;">Blog</span>
+            <span class="menu_sing" style="text-decoration:underline;" id="home">Home</span>
+            <span class="menu_sing" id="about">About</span>
+            <span class="menu_sing" id="contact">Contact</span>
+            <span class="menu_sing" style="text-decoration: line-through;" id="blog">Blog</span>
         </div>
     </div>
 
+    <div class="transLeft"></div>
+    <div class="transRight"></div>
 
 
     <!-- END FIXED PARTS -->
@@ -78,7 +79,7 @@
         <div class="cont-image-pro"></div>
 
         <span class="project" id="naked">Naked</span>
-        <span class="project" id="selfbrand" style="color:#333;">Selfbrand</span>
+        <span class="project" id="selfbrand">Selfbrand</span>
         <span class="project" id="ideas">Ideas</span>
         <span class="project" id="flemma">Flemma</span>
 

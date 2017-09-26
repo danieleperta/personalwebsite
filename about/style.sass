@@ -1,0 +1,303 @@
+@import 'fixed'
+
+.loader
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0px
+  left: 0px
+  background: #FF2741
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 9999999
+  color: #fff
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  font-size: 20vw
+  transform: translateX(0%)
+  transition: 600ms transform cubic-bezier(0.4, 0.0, 0.2, 1)
+
+  
+.transLeft
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0px
+  left: 0px
+  background: #FF2741
+  transform: translateX(-100%)
+  transition: 600ms transform cubic-bezier(0.4, 0.0, 0.2, 1)
+  display: flex
+  justify-content: center
+  z-index: 9999
+  align-items: center
+
+.transRight
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0px
+  left: 0px
+  background: #FF2741
+  transform: translateY(100%)
+  transition: 600ms transform cubic-bezier(0.4, 0.0, 0.2, 1)
+  display: flex
+  justify-content: center
+  z-index: 9999
+  align-items: center
+
+.goUp
+  transform: translateY(0%)
+
+
+
+.goOut
+  transform: translateX(-100%)
+
+
+.leftbar
+  position: fixed
+  height: 100%
+  left: 30px
+  width: 35px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  background: transparent
+  z-index: 8888
+  transition: all 600ms cubic-bezier(0.4, 0.0, 0.2, 1)
+  transform: translateX(-200%)
+  mix-blend-mode: difference
+  @media (max-width: 650px)
+    left: 25px
+
+
+
+
+
+.menutxt
+  color: white
+  font-size: 15px
+  cursor: pointer
+  z-index: 8888
+  position: fixed
+  top: 30px
+  right: 30px
+  font-family: 'Montserrat', sans-serif
+  transform: translateX(200%)
+  font-weight: 500
+  transition: all 600ms cubic-bezier(0.4, 0.0, 0.2, 1)
+  mix-blend-mode: difference
+  &:hover
+    text-decoration: line-through
+  @media (max-width:  650px)
+    right: 20px
+
+
+.menucont
+  width: 100%
+  height: 100vh
+  position: fixed
+  bottom: 0px
+  left: 0px
+  top: 0xp
+  right: 0px
+  background: #000
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  transform: translateX(100%)
+  z-index: 7777
+  transition: transform 700ms cubic-bezier(0.4, 0.0, 0.2, 1)
+
+.apriMenu
+  transform: translateX(0%)
+
+.menu_text
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  flex-direction: column
+  text-align: right
+  margin-right: 13vw
+
+.menu_sing
+  text-align: right
+  color: #fff
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  font-size: 11vw
+  margin-bottom: -2vw
+  cursor: pointer
+  @media (max-width: 650px)
+    font-size: 70px
+  &:hover
+    text-decoration: line-through
+
+
+
+
+
+.about-section
+  width: 100%
+  display: flex
+  height: 100%
+  justify-content: center
+  align-items: center
+  background-color: transparent
+  position: relative
+  flex-direction: column
+
+.why
+  width: 100%
+  display: flex
+  height: 100%
+  justify-content: center
+  align-items: flex-start
+  background-color: white
+  position: relative
+  flex-direction: column
+
+.skills
+  width: 100%
+  display: flex
+  height: 100%
+  justify-content: center
+  align-items: flex-start
+  background-color: #fff
+  position: relative
+  flex-direction: column
+  overflow: hidden
+
+
+.skill
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+  margin-left: 7vw
+  z-index: 1
+
+
+
+
+
+
+.myskill
+  font-weight: bold
+  font-family: 'Montserrat', sans-serif
+  color: #fff
+  font-size: 8vw
+  align-self: flex-start
+  margin-left: 7vw
+
+
+.contoriz
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+  margin-left: 40px
+
+.perc
+  font-weight: bold
+  font-family: 'Montserrat', sans-serif
+  color: #FF2741
+  font-size: 13vw
+  display: flex
+  justify-content: center
+  align-self: center
+  justify-content: center
+
+.conttit
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: -100px
+  z-index: 0
+  left: 0px
+
+.titski
+  color: #f1f1f1
+  line-height: 1
+  font-size: 50vw
+  font-family: 'Montserrat', sans-serif
+
+.titleskill
+  font-weight: bold
+  font-family: 'Montserrat', sans-serif
+  color: #FF2741
+  font-size: 5vw
+
+  
+.valueskill
+  font-weight: bold
+  font-family: 'Montserrat', sans-serif
+  color: #000
+  font-size: 2vw
+
+
+.whyme
+  font-size: 10vw
+  color: #000
+  margin-left: 7vw
+  font-weight: bold
+  font-family: 'Montserrat', sans-serif
+  line-height: 1
+  letter-spacing: -0.75px
+
+.foto
+  width: 300px
+  height: 300px
+  background: url('../images/foto.jpg')
+  background-size: cover
+  border-radius: 100%
+
+.about-text
+  font-size: 10vw
+  color: #FF2741
+  position: relative
+  font-family: 'Montserrat', sans-serif
+  font-weight: bold
+  width: 90%
+  line-height: 0.9
+  letter-spacing: -0.75px
+
+
+.cont-desc-about
+  width: 100%
+  height: 100%
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 0px
+  left: 0px
+
+
+.next
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  background: #fff
+  cursor: pointer
+  &:hover
+    .next_text
+      transform: translateX(30%)
+
+.next_text
+  font-size: 100px
+  color: #222
+  padding: 20px
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  transition: 700ms all cubic-bezier(0.4, 0.0, 0.2, 1)
+  transform: translateX(0%)
+  @media (max-width: 650px)
+    font-size: 6vw
